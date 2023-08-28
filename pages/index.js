@@ -7,7 +7,7 @@ export default function Home() {
     return (
         
         <LandingPopup/>
-     <div className="full-flex-centered"> 
+     <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
          
              <LandingPage /> 
      
