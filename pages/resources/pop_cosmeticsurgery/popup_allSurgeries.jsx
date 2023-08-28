@@ -8,7 +8,7 @@ import { BreastImplantInfo } from "@/components/cosmeticSurgeryInfo/breastImplan
 
 import BreastLiftInfo from "@/components/cosmeticSurgeryInfo/breastLift/breastLift";
 import BreastReductionInfo from "@/components/cosmeticSurgeryInfo/breastReduction/breastReduction";
-import FaceliftInfo from "@/components/cosmeticSurgeryInfo/facelift/facelift";
+import FaceliftInfo from "@/components/cosmeticSurgeryInfo/faceLift/faceLift";
 import LiposuctionInfo from "@/components/cosmeticSurgeryInfo/liposuction/liposuction";
 import TransitionInfo from "@/components/cosmeticSurgeryInfo/transition/transition";
 import RhinoplastyInfo from "@/components/cosmeticSurgeryInfo/rhinoplasty/rhinoplasty";
