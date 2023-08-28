@@ -1,0 +1,174 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2119B4;
+  --color-secondary: #393e46;
+  --color-accent: #ff5722;
+  --color-highlight: #eeeeee;
+  --color-dark: #222631;
+}
+
+html, body {
+  position: relative;
+  /* Add relative positioning to the body */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: -9999999;
+
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: -4em;
+}
+
+
+
+.bounds {
+  border: 1px solid red;
+}
+
+.b1{ border: 1px solid red;}
+.b2{ border: 1px solid orange;}
+.b3{ border: 1px solid yellow;}
+.b4{ border: 1px solid green;}
+.b5{ border: 1px solid blue;}
+
+
+.custom-bullet-list {
+  list-style-type: none;
+  /* To remove the default bullet point */
+  padding-left: 0;
+  /* Adjust this value to achieve desired spacing */
+}
+
+.custom-bullet-list li {
+  background-image: url('/images/iconDot.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  /* Adjust this value based on the width of your image */
+  margin-bottom: 15px;
+  /* Adjust this value to space the items vertically */
+  background-size: 20px;
+  /* Adjust this value based on desired display size of icon */
+}
+
+
+
+.required {
+  color: red;
+}
+
+.full-flex-centered {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  z-index: -9999;
+
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+
+
+
+.container {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.logo {
+  height: 2em;
+  width: 2.5em;
+  margin-top: -1.2em;
+  margin-left: 4em;
+  scale: 2.5;
+  z-index: 99;
+}
+
+
+@media screen and (max-width: 320px) {
+  .background {
+      width: 100vw;
+      /* border: 1px solid aqua; */
+
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .background {
+    width: 100vw;
+    height: 100vh;
+      /* border: 1px solid blue; */
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .background {
+    width: 100%;
+      /* border: 1px solid green; */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .background {
+      display: 100%;
+      width: 100%;
+      /* border: 1px solid yellow; */
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .background {
+    width: 100%;
+      /* border: 1px solid orange; */
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .background {
+    width: 100%;
+      /* border: 1px solid blue; */
+  }
+}

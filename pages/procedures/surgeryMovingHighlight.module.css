@@ -1,0 +1,449 @@
+.proceduresHighlight {
+    margin-top: 16rem;
+    margin-left: -16rem;
+    justify-content: center;
+    width: 40%;
+    background-color: transparent;
+}
+
+.text-left, .text-right {
+    opacity: 0.7;
+  }
+
+.headerText {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: #E5E7EB;
+}
+
+.proceduresHighlight > h1 {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #E5E7EB;
+    scale: 1.7;
+}
+
+.highlightText {
+    display: grid;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #9CA3AF;
+    wrap: nowrap;
+}
+
+.detailsButtonContainer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.detailsButton {
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    width: 16rem;
+    height: 4rem;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+    background-color: #D1D5DB;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    opacity: 0.6;
+}
+
+.detailsButton:hover {
+    color: #374151;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+.mainTitle {
+    width: 100%;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    /* You've already defined styles for this breakpoint above, so I'll leave it as is */
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /* You've also defined styles for this breakpoint above, so I'll leave it as is */
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    /* Assuming a transition between mobile to small tablet devices */
+    .headerText {
+        font-size: 0.45em;
+    }
+    .highlightText {
+        width: 100%;
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5em;
+    }
+    .proceduresHighlight {
+        margin-left: 1em;
+        width: 40em;
+    }
+    .highlightText>p {
+        font-size: large;
+    }
+    .mainTitle {
+        font-size: large;
+        letter-spacing: 2em;
+        margin-bottom: -1em;
+    }
+    .detailsButton {
+        scale: 0.7;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+    /* Transition from smaller to larger tablet sizes */
+    .headerText {
+        font-size: 0.6em;
+    }
+    .highlightText {
+        width: 100%;
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        width: 55%;
+    }
+    .highlightText>p {
+        font-size: x-large;
+    }
+    .mainTitle {
+        font-size: x-large;
+        letter-spacing: 2em;
+        margin-bottom: -1em;
+    }
+    .detailsButton {
+        scale: 0.8;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    /* Again, you've defined styles for this, so I'll leave it */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* You've defined styles for this too, so it's left as is */
+}
+
+@media screen and (min-width: 1201px) {
+    /* Your styles for larger screens are already defined above */
+}
+
+
+@media screen and (max-width: 768px) {
+    .headerText {
+        font-size: xx-small;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        /* border: 1px solid red; */
+        width: 60%;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: large;
+    }
+    .mainTitle {
+        /* border: 1px solid red; */
+        letter-spacing: 2em;
+        margin-bottom: -1em;
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .headerText {
+        font-size: 0.3em;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 90%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        margin: 0;
+    }
+    .proceduresHighlight {
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid purple; */
+        width:100%;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: large;
+    }
+    .mainTitle {
+        display: flex;
+        /* border: 1px solid cyan; */
+        font-size: medium !important;
+        margin-bottom: -1em;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detailsButton{
+        scale: 0.6;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .headerText {
+        font-size: x-small;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
+    }
+    .proceduresHighlight {
+        margin-left: 1rem;
+        display: flex-box;
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: 0;
+    
+    }
+       
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: small;
+    }
+    .mainTitle {
+
+        font-size: small !important;
+
+        margin-bottom: -1em;
+        width: 60%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+   
+    }
+    .detailsButton{
+        scale: 0.6;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .headerText {
+        font-size: 0.4em;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 60%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        margin-left: 2em;
+        /* border: 1px solid red; */
+        width: 44em;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: large;
+    }
+    .mainTitle {
+
+            /* border: 1px solid red; */
+            font-size: large !important;
+            letter-spacing: 2em;
+            margin-bottom: -1em;
+    }
+
+    .mainTitle>h1{
+        width: auto;
+    
+    }
+    .detailsButton{
+        scale: 0.6;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .headerText {
+        font-size: x-small;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        /* border: 1px solid red; */
+        width: 60%;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: x-large;
+    }
+    .mainTitle {
+        /* border: 1px solid red; */
+        font-size: xx-large !important;
+        letter-spacing: 2em;
+        margin-bottom: -1em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .headerText {
+        font-size: x-small;
+    }
+    .highlightText {
+        width: 100%;
+        /* border: 1px solid blue; */
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: x-large;
+    }
+    .mainTitle {
+        /* border: 1px solid red; */
+        font-size: xx-large !important;
+        letter-spacing: 2em;
+        margin-bottom: -1em;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .headerText {
+        font-size: small;
+    }
+    .highlightText {
+        width: 100%;
+        font-size: 3em;
+        /* border: 1px solid blue; */
+        margin-top: 2em;
+        padding: 0;
+    }
+    .procedureComponent {
+        width: 80%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    .proceduresHighlight {
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+    .highlightText>p {
+        /* border: 1px solid pink; */
+        font-size: xx-large;
+    }
+    .mainTitle {
+        /* border: 1px solid red; */
+        font-size: 6em;
+        letter-spacing: 2em;
+        margin-bottom: -1em;;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 320px) {
+    .headerText {
+        font-size: 0.2em;;
+    }
+    .mainTitle >h1 {
+        font-size: 0.2em;
+        letter-spacing: 1em;
+        margin-bottom: -1em;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+}

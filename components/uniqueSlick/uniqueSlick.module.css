@@ -1,0 +1,216 @@
+.uniqueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.mainContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #E5E7EB;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: calc(2vw + 2.3em);
+}
+
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    /* white-space: nowrap; */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: calc(1vw + 0.2em);
+}
+
+.requestButton {
+    z-index: 5;
+    background-color: #D1D5DB;
+    opacity: 0.6;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    /* Combines padding-top, -right, -bottom, and -left */
+    border-radius: 0.25rem;
+    margin-left: 4rem;
+    margin-right: 0;
+    white-space: nowrap;
+    height: 4rem;
+    width: 8em;
+    vertical-align: middle;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* From .shadow-lg */
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.requestButton:hover {
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* From .hover\:shadow-xl:hover */
+}
+
+
+.text-right-transition {
+    transition: opacity 0.6s ease-in;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .uniqueContainer {
+        /* border: 1px solid green; */
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        width: 80%;
+    } 
+    .requestButton {
+        scale: 0.5;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .requestButton {
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin: 1rem auto 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .uniqueContainer {
+        /* border: 1px solid blue; */
+    }
+    .titleContainer{
+        /* border: 1px solid yellow; */
+        display: flex;
+        align-items: center;
+
+    }
+    .span1 {
+        display: absolute;
+        left: 0;
+        font-size: xx-large;
+        
+
+    }
+    .span2 {
+        font-size: xx-large;
+    }
+    .requestButton {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .uniqueContainer {
+        /* border: 1px solid aqua; */
+    }
+    .span1{
+        font-size: medium;
+    }
+    .span2{
+        font-size: medium;
+    }
+    .subTitle {
+        scale: 0.9;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .uniqueContainer {
+        /* border: 1px solid yellow; */
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        width: 80%;
+    }
+    .requestButton {
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin: 1rem auto 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        cursor: pointer;
+        scale: 0.7;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .uniqueContainer {
+        /* border: 1px solid orange; */
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .requestButton {
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin: 1rem auto 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        cursor: pointer;
+        scale: 0.7;
+        margin-bottom: 4em;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+    .uniqueContainer {
+        /* border: 1px solid blue; */
+    }
+    .requestButton {
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin: 1rem 4rem 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .requestButton:hover {
+        box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        /* From .hover\:shadow-xl:hover */
+        background-color: black;
+    }
+
+}
