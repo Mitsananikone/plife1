@@ -7,7 +7,7 @@ export default function Home() {
     return (
         
         <LandingPopup/>
-     <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
+     // <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
          
              <LandingPage /> 
      
