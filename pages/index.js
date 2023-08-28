@@ -18,8 +18,8 @@ export default function Home() {
             {/* <ProcedureTypes/> */}
             {/* <CosmeticSurgeryPage/>
 <BreastImplantInfo/> */}
-            <MotionTest/>
-            {/* <LandingPage /> */}
+            // <MotionTest/>
+             <LandingPage /> 
      
             {/* <AboutPage/>
             <ProcedurePage/> */}
